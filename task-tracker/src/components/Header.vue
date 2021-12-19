@@ -1,7 +1,7 @@
 <template>
     <header>
         <h1>{{ title }}</h1>
-        <Button v-on:toggle-add-task="$emit('toggle-add-task')" class="add-btn" v-bind:text="showAddTask ? 'Close' : 'Add Task' " v-bind:color="showAddTask ? 'darkred' : 'green' " />
+        <Button v-on:btn-click="$emit('toggle-add-task')" class="add-btn" v-bind:text="showAddTask ? 'Close' : 'Add Task' " v-bind:color="showAddTask ? 'red' : 'green' " />
     </header>
 </template>
 
