@@ -1,7 +1,7 @@
 <template>
     <header>
         <h1>{{ title }}</h1>
-        <Button text="Add Task" color="green" />
+        <Button class="add-btn" text="Add Task" color="green" />
     </header>
 </template>
 
@@ -21,9 +21,13 @@ export default {
 
 <style scoped>
     header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    }
+
+    h1 {
+        margin-left: 10px;
     }
 </style>
