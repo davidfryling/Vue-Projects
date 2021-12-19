@@ -1,7 +1,7 @@
 <template>
     <header>
         <h1>{{ title }}</h1>
-        <Button class="add-btn" text="Add Task" color="green" />
+        <Button v-on:toggle-add-task="$emit('toggle-add-task')" class="add-btn" v-bind:text="showAddTask ? 'Close' : 'Add Task' " v-bind:color="showAddTask ? 'darkred' : 'green' " />
     </header>
 </template>
 
@@ -12,6 +12,7 @@ export default {
     name: 'Header',
     props: {
         title: String,
+        showAddTask: Boolean
     },
     components: {
         Button
